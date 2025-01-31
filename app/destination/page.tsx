@@ -1,6 +1,7 @@
 export default function Destination() {
     return (
-        <h1>destination</h1>
+        <body className="page2">
+        </body>
     )
 }
 

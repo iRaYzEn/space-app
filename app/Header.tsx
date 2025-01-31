@@ -1,15 +1,26 @@
+"use client"
 import Image from "next/image"
-import Link from "next/link"
-
+import iconHamburger from "@/public/assets/shared/icon-hamburger.svg"
+import iconClose from "@/public/assets/shared/icon-close.svg"
 import logo from "@/public/assets/shared/logo.svg"
+import Link from "next/link"
+import { useState } from "react"
+
 
 export default function Header() {
-    return <header className="flex justify-between items-center ml-800">
-        <Image className="mt-600" src={logo} alt="logo" />
-        <nav className="text-white bg-transparent  py-600 pl-1600 mt-600">
+    let [isClicked, setIsClicked] = useState(false);
+
+    function iconSwap() {
+        setIsClicked(state => !state);
+    }
+
+    return (
+        <header className="flex justify-between items-center ml-800">
+            <Image className="mt-600" src={logo} alt="logo" />
+            <nav className="text-white bg-transparent  py-600 pl-1600 mt-600 hidden sm:block">
                 <ul className="flex px-800 gap-600 mr-800 ">
                     <li>
-                        <Link className="opacity-100" href="/">00 HOME</Link>
+                        <Link href="/">00 HOME</Link>
                     </li>
                     <li>
                         <Link href="./destination">01 DESTINATION</Link>
@@ -21,6 +32,13 @@ export default function Header() {
                         <Link href="./technology">03 TECHNOLOGY</Link>
                     </li>
                 </ul>
-        </nav>
-    </header>
+            </nav>
+            {
+                isClicked ? <button onClick={iconSwap} className="mr-800">
+                    <Image src={iconClose} alt="icon close" /></button> :
+                    <button className="mr-800" onClick={iconSwap}>
+                        <Image src={iconHamburger} alt="hamburger icon" />  </button>
+            }
+        </header>
+    )
 }

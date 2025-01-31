@@ -301,13 +301,9 @@ img, video {
   display: none;
 }
 
-.relative {
-  position: relative;
-}
-
-.mx-\[20em\] {
-  margin-left: 20em;
-  margin-right: 20em;
+.mx-\[10vw\] {
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 .ml-800 {
@@ -334,12 +330,20 @@ img, video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-\[300px\] {
   height: 300px;
 }
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
 }
 
 .items-center {
@@ -350,6 +354,10 @@ img, video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-600 {
   gap: 48px;
 }
@@ -358,42 +366,13 @@ img, video {
   border-radius: 9999px;
 }
 
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-green-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 253 244 / var(--tw-bg-opacity, 1));
-}
-
 .bg-transparent {
   background-color: #0000;
 }
 
-.bg-neutral-50 {
+.bg-white {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity, 1));
-}
-
-.bg-current {
-  background-color: currentColor;
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(208 214 249 / var(--tw-bg-opacity, 1));
-}
-
-.bg-blue-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#f5f5f5\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(245 245 245 / var(--tw-bg-opacity, 1));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .px-800 {
@@ -412,6 +391,10 @@ img, video {
 
 .text-\[1\.5rem\] {
   font-size: 1.5rem;
+}
+
+.text-\[1\.8rem\] {
+  font-size: 1.8rem;
 }
 
 .text-\[10rem\] {
@@ -441,122 +424,98 @@ img, video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.opacity-5 {
-  opacity: .05;
-}
-
-.opacity-10 {
-  opacity: .1;
-}
-
-.opacity-100 {
-  opacity: 1;
-}
-
-.shadow-inner {
-  --tw-shadow: inset 0 2px 4px 0 #0000000d;
-  --tw-shadow-colored: inset 0 2px 4px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-black {
-  --tw-shadow-color: #000;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-slate-500 {
-  --tw-shadow-color: #64748b;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-slate-900 {
-  --tw-shadow-color: #0f172a;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.blur-sm {
-  --tw-blur: blur(4px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-md {
-  --tw-blur: blur(12px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.blur-lg {
-  --tw-blur: blur(16px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-sm {
-  --tw-drop-shadow: drop-shadow(0 1px 1px #0000000d);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-md {
-  --tw-drop-shadow: drop-shadow(0 4px 3px #00000012) drop-shadow(0 2px 2px #0000000f);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px #0000000a) drop-shadow(0 4px 3px #0000001a);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.drop-shadow-2xl {
-  --tw-drop-shadow: drop-shadow(0 25px 25px #00000026);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 body {
-  background-image: url("/assets/home/background-home-desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100dvh;
 }
 
-.after\:absolute:after {
-  content: var(--tw-content);
-  position: absolute;
+.page1 {
+  background-image: url("/_next/static/media/background-home-desktop.37645455.jpg");
 }
 
-.after\:mt-600:after {
-  content: var(--tw-content);
-  margin-top: 48px;
+.page2 {
+  background-image: url("/_next/static/media/background-destination-desktop.eee2b80c.jpg");
 }
 
-.after\:w-full:after {
-  content: var(--tw-content);
-  width: 100%;
+.page3 {
+  background-image: url("/_next/static/media/background-crew-desktop.d48c6e94.jpg");
 }
 
-.after\:w-96:after {
-  content: var(--tw-content);
-  width: 24rem;
+.page4 {
+  background-image: url("/_next/static/media/background-technology-desktop.3a78d2e2.jpg");
 }
 
-.after\:bg-white:after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+@media (width <= 1124px) {
+  .page1 {
+    background-image: url("/_next/static/media/background-home-tablet.d5520f13.jpg");
+  }
+
+  .page2 {
+    background-image: url("/_next/static/media/background-destination-tablet.d15fc250.jpg");
+  }
+
+  .page3 {
+    background-image: url("/_next/static/media/background-crew-tablet.e97ed4ea.jpg");
+  }
+
+  .page4 {
+    background-image: url("/_next/static/media/background-technology-tablet.311466a0.jpg");
+  }
 }
 
-.after\:py-600:after {
-  content: var(--tw-content);
-  padding-top: 48px;
-  padding-bottom: 48px;
+@media (width <= 768px) {
+  .page1 {
+    background-image: url("/_next/static/media/background-home-mobile.4261557c.jpg");
+  }
+
+  .page2 {
+    background-image: url("/_next/static/media/background-destination-mobile.a99e2980.jpg");
+  }
+
+  .page3 {
+    background-image: url("/_next/static/media/background-crew-mobile.dd20fe76.jpg");
+  }
+
+  .page4 {
+    background-image: url("/_next/static/media/background-technology-mobile.6d9395f1.jpg");
+  }
 }
 
-.after\:pl-1600:after {
-  content: var(--tw-content);
-  padding-left: 128px;
+@media (width >= 640px) {
+  .sm\:block {
+    display: block;
+  }
 }
 
-.after\:content-\[\'\'\]:after {
-  --tw-content: "";
-  content: var(--tw-content);
+@media (width >= 768px) {
+  .md\:mx-\[auto\] {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .md\:mt-12 {
+    margin-top: 3rem;
+  }
+
+  .md\:mt-44 {
+    margin-top: 11rem;
+  }
+
+  .md\:items-center {
+    align-items: center;
+  }
+
+  .md\:text-center {
+    text-align: center;
+  }
+}
+
+@media (width >= 1024px) {
+  .lg\:mt-44 {
+    margin-top: 11rem;
+  }
 }
 
 

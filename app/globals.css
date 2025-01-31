@@ -3,9 +3,60 @@
 @tailwind utilities;
 
 body {
-    background-image: url("/assets/home/background-home-desktop.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100dvh;
+}
+
+.page1 {
+    background-image: url("../public/assets/home/background-home-desktop.jpg");
+}
+
+.page2 {
+    background-image: url("../public/assets/destination/background-destination-desktop.jpg");
+}
+
+.page3 {
+    background-image: url("../public/assets/crew/background-crew-desktop.jpg");
+}
+
+.page4 {
+    background-image: url("../public/assets/technology/background-technology-desktop.jpg");
+}
+
+@media (max-width: 1124px) {
+    .page1 {
+        background-image: url("../public/assets/home/background-home-tablet.jpg");
+    }
+
+    .page2 {
+        background-image: url("../public/assets/destination/background-destination-tablet.jpg");
+    }
+
+    .page3 {
+        background-image: url("../public/assets/crew/background-crew-tablet.jpg");
+    }
+
+    .page4 {
+        background-image: url("../public/assets/technology/background-technology-tablet.jpg");
+    }
+}
+
+@media (max-width: 768px) {
+    .page1 {
+        background-image: url("../public/assets/home/background-home-mobile.jpg");
+    }
+
+    .page2 {
+        background-image: url("../public/assets/destination/background-destination-mobile.jpg");
+    }
+
+    .page3 {
+        background-image: url("../public/assets/crew/background-crew-mobile.jpg");
+    }
+
+    .page4 {
+        background-image: url("../public/assets/technology/background-technology-mobile.jpg");
+    }
 }

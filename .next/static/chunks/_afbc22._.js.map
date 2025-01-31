@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///home/ray/space-app/public/assets/shared/icon-hamburger.svg.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 24, height: 21, blurDataURL: null, blurWidth: 0, blurHeight: 0 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,+IAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;IAAI,aAAa;IAAM,WAAW;IAAG,YAAY;AAAE"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///home/ray/space-app/public/assets/shared/logo.svg.mjs%20%28structured%20image%20object%29"],"sourcesContent":["import src from \"IMAGE\";\nexport default { src, width: 48, height: 48, blurDataURL: null, blurWidth: 0, blurHeight: 0 }\n"],"names":[],"mappings":";;;AAAA;;uCACe;IAAE,KAAA,kIAAA,CAAA,UAAG;IAAE,OAAO;IAAI,QAAQ;IAAI,aAAa;IAAM,WAAW;IAAG,YAAY;AAAE"}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
