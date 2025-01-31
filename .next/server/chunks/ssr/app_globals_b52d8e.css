@@ -301,9 +301,9 @@ img, video {
   display: none;
 }
 
-.mx-\[10vw\] {
-  margin-left: 10vw;
-  margin-right: 10vw;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ml-800 {
@@ -314,16 +314,28 @@ img, video {
   margin-right: 64px;
 }
 
-.mr-\[4em\] {
-  margin-right: 4em;
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-400 {
+  margin-top: 32px;
 }
 
 .mt-600 {
   margin-top: 48px;
 }
 
-.mt-96 {
-  margin-top: 24rem;
+.mt-\[15dvh\] {
+  margin-top: 15dvh;
+}
+
+.mt-800 {
+  margin-top: 64px;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
@@ -334,12 +346,40 @@ img, video {
   display: none;
 }
 
-.h-\[300px\] {
-  height: 300px;
+.h-\[200px\] {
+  height: 200px;
 }
 
-.w-\[300px\] {
-  width: 300px;
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-9 {
+  width: 2.25rem;
+}
+
+.w-44 {
+  width: 11rem;
+}
+
+.w-\[30em\] {
+  width: 30em;
+}
+
+.w-\[28em\] {
+  width: 28em;
+}
+
+.w-\[28vm\] {
+  width: 28vm;
+}
+
+.w-\[28vw\] {
+  width: 28vw;
 }
 
 .flex-wrap {
@@ -385,28 +425,41 @@ img, video {
   padding-bottom: 48px;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pl-1600 {
   padding-left: 128px;
 }
 
-.text-\[1\.5rem\] {
-  font-size: 1.5rem;
+.text-center {
+  text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-\[1\.8rem\] {
   font-size: 1.8rem;
 }
 
-.text-\[10rem\] {
-  font-size: 10rem;
-}
-
 .text-\[1rem\] {
   font-size: 1rem;
 }
 
+.text-\[27vw\] {
+  font-size: 27vw;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.text-\[18vm\] {
+  color: 18vm;
 }
 
 .text-blue-300 {
@@ -484,37 +537,59 @@ body {
 }
 
 @media (width >= 640px) {
-  .sm\:block {
-    display: block;
+  .sm\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .sm\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .sm\:px-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sm\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
+  .sm\:text-\[10rem\] {
+    font-size: 10rem;
   }
 }
 
 @media (width >= 768px) {
-  .md\:mx-\[auto\] {
-    margin-left: auto;
-    margin-right: auto;
+  .md\:block {
+    display: block;
   }
 
-  .md\:mt-12 {
-    margin-top: 3rem;
-  }
-
-  .md\:mt-44 {
-    margin-top: 11rem;
+  .md\:hidden {
+    display: none;
   }
 
   .md\:items-center {
     align-items: center;
   }
-
-  .md\:text-center {
-    text-align: center;
-  }
 }
 
 @media (width >= 1024px) {
-  .lg\:mt-44 {
-    margin-top: 11rem;
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+
+  .lg\:text-left {
+    text-align: left;
+  }
+}
+
+@media (width >= 1280px) {
+  .xl\:block {
+    display: block;
   }
 }
 

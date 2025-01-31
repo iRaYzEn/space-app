@@ -15,9 +15,9 @@ export default function Header() {
     }
 
     return (
-        <header className="flex justify-between items-center ml-800">
-            <Image className="mt-600" src={logo} alt="logo" />
-            <nav className="text-white bg-transparent  py-600 pl-1600 mt-600 hidden sm:block">
+        <header className="flex justify-between  items-center ml-800 mt-400">
+            <Image className="" src={logo} alt="logo" />
+            <nav className="text-white bg-transparent  py-600 pl-1600 mt-600 hidden md:block">
                 <ul className="flex px-800 gap-600 mr-800 ">
                     <li>
                         <Link href="/">00 HOME</Link>
@@ -34,9 +34,9 @@ export default function Header() {
                 </ul>
             </nav>
             {
-                isClicked ? <button onClick={iconSwap} className="mr-800">
+                isClicked ? <button onClick={iconSwap} className="mr-800 md:hidden block">
                     <Image src={iconClose} alt="icon close" /></button> :
-                    <button className="mr-800" onClick={iconSwap}>
+                    <button className="mr-800 md:hidden block" onClick={iconSwap}>
                         <Image src={iconHamburger} alt="hamburger icon" />  </button>
             }
         </header>
